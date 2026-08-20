@@ -37,7 +37,7 @@ export default function HomePage() {
       <section className="relative border-y-2 border-ink-900 bg-signal-400 py-5">
         <Marquee duration={45}>
           {marqueeItems.map((t) => (
-            <div key={t} className="flex items-center gap-6 stencil text-2xl text-ink-900">
+            <div key={t} className="flex items-center gap-4 stencil text-xl text-ink-900 sm:gap-6 sm:text-2xl">
               <span>{t}</span>
               <span className="text-roof-500">★</span>
             </div>
@@ -50,9 +50,9 @@ export default function HomePage() {
 
       {/* Patrick-Zitat */}
       <section className="relative py-24">
-        <div className="mx-auto max-w-5xl px-6 sm:px-10">
+        <div className="mx-auto max-w-5xl px-5 sm:px-10">
           <Reveal>
-            <GlassCard variant="lift" className="relative overflow-hidden p-8 sm:p-14">
+            <GlassCard variant="lift" className="relative overflow-hidden p-6 sm:p-14">
               <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-signal-400/40 blur-2xl" />
               <div className="grid gap-10 sm:grid-cols-[auto_1fr] sm:items-center">
                 <div className="relative mx-auto h-40 w-40 shrink-0 overflow-hidden rounded-full bg-signal-400 ring-4 ring-signal-400 sm:mx-0 sm:h-56 sm:w-56">
@@ -82,11 +82,11 @@ export default function HomePage() {
 
       {/* Leistungen Grid */}
       <section id="leistungen" className="relative py-28 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 sm:px-10">
+        <div className="mx-auto max-w-7xl px-5 sm:px-10">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-end">
             <Reveal>
               <div className="chip-signal">Leistungen</div>
-              <h2 className="mt-6 display text-5xl leading-[0.98] tracking-tight text-ink-900 sm:text-6xl">
+              <h2 className="mt-6 display text-[2.5rem] leading-[0.98] tracking-tight text-ink-900 sm:text-6xl">
                 Steildächer & Flachdächer
               </h2>
             </Reveal>
@@ -135,7 +135,7 @@ export default function HomePage() {
 
       {/* MÜLLERGRUPPE / MÜLLERZIRKEL */}
       <section className="relative py-24">
-        <div className="mx-auto max-w-7xl px-6 sm:px-10">
+        <div className="mx-auto max-w-7xl px-5 sm:px-10">
           <div className="grid gap-16 lg:grid-cols-[1fr_1.15fr] lg:items-center">
             <Reveal>
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem] bg-ink-900 shadow-lift">
@@ -145,7 +145,7 @@ export default function HomePage() {
 
             <Reveal delay={0.1}>
               <div className="chip-signal">Das Unternehmen</div>
-              <h2 className="mt-6 display text-5xl leading-[0.98] tracking-tight text-ink-900 sm:text-6xl">
+              <h2 className="mt-6 display text-[2.5rem] leading-[0.98] tracking-tight text-ink-900 sm:text-6xl">
                 Dritte Generation. <br />
                 <span className="display-italic text-roof-500">Deutschlandweit.</span>
               </h2>
@@ -176,10 +176,10 @@ export default function HomePage() {
 
       {/* YouTube */}
       <section className="relative py-28">
-        <div className="mx-auto max-w-7xl px-6 sm:px-10">
+        <div className="mx-auto max-w-7xl px-5 sm:px-10">
           <Reveal>
             <div className="chip-signal">Imageinterviews</div>
-            <h2 className="mt-6 display text-5xl leading-[0.98] tracking-tight text-ink-900 sm:text-6xl">
+            <h2 className="mt-6 display text-[2.5rem] leading-[0.98] tracking-tight text-ink-900 sm:text-6xl">
               Patrick im O-Ton
             </h2>
           </Reveal>
@@ -195,14 +195,14 @@ export default function HomePage() {
 
       {/* Eudaimonia */}
       <section className="relative py-24">
-        <div className="mx-auto max-w-6xl px-6 sm:px-10">
+        <div className="mx-auto max-w-6xl px-5 sm:px-10">
           <Reveal>
-            <div className="paper-card-lift relative overflow-hidden rounded-[2.5rem] p-8 sm:p-16">
+            <div className="paper-card-lift relative overflow-hidden rounded-[2rem] p-6 sm:rounded-[2.5rem] sm:p-16">
               <div className="pointer-events-none absolute -right-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-signal-400/30 blur-2xl" />
               <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:items-center">
                 <div>
                   <div className="chip-signal">Buch</div>
-                  <h2 className="mt-6 display text-5xl leading-[0.98] tracking-tight text-ink-900 sm:text-6xl">
+                  <h2 className="mt-6 display text-[2.5rem] leading-[0.98] tracking-tight text-ink-900 sm:text-6xl">
                     Eudaimonia
                   </h2>
                   <div className="mt-2 text-lg text-ink-500">Das Buch für Gründer im Handwerk.</div>
@@ -223,11 +223,11 @@ export default function HomePage() {
 
       {/* Blog */}
       <section className="relative py-24">
-        <div className="mx-auto max-w-7xl px-6 sm:px-10">
+        <div className="mx-auto max-w-7xl px-5 sm:px-10">
           <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
             <Reveal>
               <div className="chip-signal">MÜLLERDÄCHER® Blog</div>
-              <h2 className="mt-6 display text-5xl leading-[0.98] tracking-tight text-ink-900 sm:text-6xl">
+              <h2 className="mt-6 display text-[2.5rem] leading-[0.98] tracking-tight text-ink-900 sm:text-6xl">
                 Aktuelle Beiträge
               </h2>
             </Reveal>
@@ -260,10 +260,10 @@ export default function HomePage() {
 
       {/* Netzwerk */}
       <section className="relative py-16">
-        <div className="mx-auto max-w-4xl px-6 text-center sm:px-10">
+        <div className="mx-auto max-w-4xl px-5 text-center sm:px-10">
           <Reveal>
             <div className="chip-signal">Netzwerk</div>
-            <h2 className="mt-6 display text-4xl leading-tight tracking-tight text-ink-900 sm:text-5xl">
+            <h2 className="mt-6 display text-3xl leading-tight tracking-tight text-ink-900 sm:text-5xl">
               {NETZWERK_TEXT.headline}
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-ink-500">{NETZWERK_TEXT.body}</p>
@@ -280,16 +280,16 @@ export default function HomePage() {
 
       {/* CTA */}
       <section className="relative py-24">
-        <div className="mx-auto max-w-7xl px-6 sm:px-10">
+        <div className="mx-auto max-w-7xl px-5 sm:px-10">
           <Reveal>
-            <div className="relative overflow-hidden rounded-[2.5rem] bg-ink-900 p-8 text-paper-50 sm:p-16">
+            <div className="relative overflow-hidden rounded-[2rem] bg-ink-900 p-6 text-paper-50 sm:rounded-[2.5rem] sm:p-16">
               <div className="pointer-events-none absolute -right-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-signal-400/40 blur-2xl" />
               <div className="pointer-events-none absolute -bottom-40 -left-40 h-[28rem] w-[28rem] rounded-full bg-roof-500/30 blur-2xl" />
 
               <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-center">
                 <div>
                   <div className="chip-signal">Anfrage</div>
-                  <h2 className="mt-6 display text-5xl leading-[0.98] tracking-tight text-paper-50 sm:text-6xl">
+                  <h2 className="mt-6 display text-[2.5rem] leading-[0.98] tracking-tight text-paper-50 sm:text-6xl">
                     Ihr Dach in besten Händen.
                   </h2>
                   <p className="mt-6 max-w-xl text-lg leading-relaxed text-paper-50/80">

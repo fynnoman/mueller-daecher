@@ -24,7 +24,7 @@ export default function LeistungenPage() {
       />
 
       <section className="relative py-16">
-        <div className="mx-auto max-w-7xl px-6 sm:px-10">
+        <div className="mx-auto max-w-7xl px-5 sm:px-10">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {LEISTUNGEN.map((l, i) => (
               <Reveal key={l.slug} delay={(i % 6) * 0.04}>
@@ -57,7 +57,7 @@ export default function LeistungenPage() {
       </section>
 
       <section className="relative py-16">
-        <div className="mx-auto max-w-4xl px-6 text-center sm:px-10">
+        <div className="mx-auto max-w-4xl px-5 text-center sm:px-10">
           <Reveal>
             <Link
               href="/kontakt"

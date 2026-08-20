@@ -108,7 +108,7 @@ export default function HeroHome() {
         {/* Patrick — transparent PNG on yellow signal backdrop */}
         <motion.div
           style={reduce ? undefined : { y: portraitY, willChange: "transform" }}
-          className="relative mx-auto w-full max-w-lg"
+          className="relative mx-auto w-full max-w-[22rem] sm:max-w-lg"
         >
           <div className="relative aspect-[4/5] w-full">
             {/* Solid yellow backdrop */}
@@ -146,12 +146,12 @@ export default function HeroHome() {
               />
             </motion.div>
 
-            <div className="absolute -bottom-2 left-2 right-2 z-20 flex items-center justify-between gap-3 rounded-2xl bg-ink-900/95 px-4 py-3 shadow-lift ring-1 ring-inset ring-white/10 backdrop-blur">
-              <div>
-                <div className="text-[10px] font-bold uppercase tracking-[0.22em] text-signal-400">Dachdeckermeister</div>
-                <div className="display text-xl leading-tight text-white">Patrick Raphael Müller</div>
+            <div className="absolute -bottom-2 left-2 right-2 z-20 flex items-center justify-between gap-2 rounded-2xl bg-ink-900/95 px-3 py-2.5 shadow-lift ring-1 ring-inset ring-white/10 backdrop-blur sm:gap-3 sm:px-4 sm:py-3">
+              <div className="min-w-0">
+                <div className="text-[9px] font-bold uppercase tracking-[0.18em] text-signal-400 sm:text-[10px] sm:tracking-[0.22em]">Dachdeckermeister</div>
+                <div className="display text-base leading-tight text-white sm:text-xl">Patrick Raphael Müller</div>
               </div>
-              <div className="chip-signal !bg-signal-400 !text-ink-900">DDM</div>
+              <div className="chip-signal shrink-0 !bg-signal-400 !text-ink-900">DDM</div>
             </div>
           </div>
         </motion.div>

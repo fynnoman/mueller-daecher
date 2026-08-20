@@ -15,7 +15,7 @@ function Line({ text, index, count, progress, disable }: {
   return (
     <motion.li
       style={disable ? undefined : { opacity, x }}
-      className="display text-3xl leading-tight tracking-tight text-ink-900 sm:text-4xl lg:text-5xl"
+      className="display text-2xl leading-tight tracking-tight text-ink-900 sm:text-4xl lg:text-5xl"
     >
       <span className="mr-4 text-signal-500 font-sans text-base font-bold tracking-widest align-top">
         {String(index + 1).padStart(2, "0")}
@@ -33,10 +33,10 @@ export default function WertarbeitManifest() {
 
   return (
     <section ref={ref} className="relative">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-14 px-6 py-24 sm:px-10 lg:grid-cols-[1fr_1.6fr] lg:py-32">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 py-20 sm:gap-14 sm:px-10 sm:py-24 lg:grid-cols-[1fr_1.6fr] lg:py-32">
         <div className="lg:sticky lg:top-32 lg:self-start">
           <div className="chip-signal">Unsere Philosophie</div>
-          <h2 className="mt-6 display text-6xl leading-[0.95] tracking-tight text-ink-900 sm:text-7xl">
+          <h2 className="mt-6 display text-5xl leading-[0.95] tracking-tight text-ink-900 sm:text-7xl">
             WERT<br />ARBEIT
           </h2>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-ink-500">

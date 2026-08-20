@@ -5,11 +5,11 @@ import Reveal from "./Reveal";
 
 export default function Testimonials() {
   return (
-    <section className="relative py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10">
+    <section className="relative py-20 sm:py-32">
+      <div className="mx-auto max-w-7xl px-5 sm:px-10">
         <Reveal>
           <div className="chip-signal">MÜLLERDÄCHER</div>
-          <h2 className="mt-6 display text-5xl leading-[0.98] tracking-tight text-ink-900 sm:text-6xl">
+          <h2 className="mt-6 display text-[2.5rem] leading-[0.98] tracking-tight text-ink-900 sm:text-6xl">
             Empfohlen von 398 Personen
           </h2>
           <p className="mt-4 text-sm text-ink-500">

@@ -22,7 +22,7 @@ export default function BlogPage() {
       />
 
       <section className="relative py-16">
-        <div className="mx-auto max-w-7xl px-6 sm:px-10">
+        <div className="mx-auto max-w-7xl px-5 sm:px-10">
           <Reveal>
             <h2 className="display text-3xl text-ink-900 sm:text-4xl">Imageinterview-Serie</h2>
           </Reveal>
@@ -37,7 +37,7 @@ export default function BlogPage() {
       </section>
 
       <section className="relative py-24">
-        <div className="mx-auto max-w-7xl px-6 sm:px-10">
+        <div className="mx-auto max-w-7xl px-5 sm:px-10">
           <Reveal>
             <h2 className="display text-3xl text-ink-900 sm:text-4xl">Beiträge</h2>
           </Reveal>

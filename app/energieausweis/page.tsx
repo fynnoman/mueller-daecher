@@ -21,9 +21,9 @@ export default function EnergieausweisPage() {
       />
 
       <section className="relative py-16">
-        <div className="mx-auto max-w-4xl px-6 sm:px-10">
+        <div className="mx-auto max-w-4xl px-5 sm:px-10">
           <Reveal>
-            <GlassCard variant="lift" className="relative overflow-hidden p-8 sm:p-12">
+            <GlassCard variant="lift" className="relative overflow-hidden p-6 sm:p-12">
               <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-signal-400/30 blur-2xl" />
               <p className="text-lg leading-relaxed text-ink-700">
                 Energieausweise müssen nicht zwingend von einem Energieberater oder Schornsteinfeger

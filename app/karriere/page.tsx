@@ -23,13 +23,13 @@ export default function KarrierePage() {
 
       {STELLEN.map((s, si) => (
         <section key={s.slug} className="relative py-16">
-          <div className="mx-auto max-w-6xl px-6 sm:px-10">
+          <div className="mx-auto max-w-6xl px-5 sm:px-10">
             <Reveal>
-              <GlassCard variant="lift" className="relative overflow-hidden p-8 sm:p-12">
+              <GlassCard variant="lift" className="relative overflow-hidden p-6 sm:p-12">
                 <div className="pointer-events-none absolute -right-40 -top-40 h-[24rem] w-[24rem] rounded-full bg-signal-400/30 blur-2xl" />
 
                 <div className="chip-signal">Stelle {si + 1}</div>
-                <h2 className="mt-6 display text-4xl leading-tight text-ink-900 sm:text-5xl">
+                <h2 className="mt-6 display text-3xl leading-tight text-ink-900 sm:text-5xl">
                   {s.title}
                 </h2>
 
@@ -105,10 +105,10 @@ export default function KarrierePage() {
       ))}
 
       <section className="relative py-16">
-        <div className="mx-auto max-w-4xl px-6 text-center sm:px-10">
+        <div className="mx-auto max-w-4xl px-5 text-center sm:px-10">
           <Reveal>
             <div className="chip-signal">Bewerbung</div>
-            <h2 className="mt-6 display text-4xl leading-tight text-ink-900 sm:text-5xl">
+            <h2 className="mt-6 display text-3xl leading-tight text-ink-900 sm:text-5xl">
               Jetzt in 3 Minuten bewerben.
             </h2>
             <p className="mt-4 text-lg text-ink-500">

@@ -7,8 +7,8 @@ import { IMG } from "@/lib/images";
 export default function Footer() {
   return (
     <footer className="relative mt-40 border-t border-ink-900/10 bg-gradient-to-b from-transparent to-paper-100/60">
-      <div className="mx-auto max-w-7xl px-6 pb-14 pt-24 sm:px-10">
-        <div className="mb-16 grid gap-8 md:grid-cols-[1.4fr_1fr]">
+      <div className="mx-auto max-w-7xl px-5 pb-14 pt-20 sm:px-10 sm:pt-24">
+        <div className="mb-14 grid gap-8 md:mb-16 md:grid-cols-[1.4fr_1fr]">
           <div>
             <div className="relative h-14 w-56 overflow-hidden rounded-md">
               <Image src={IMG.logo} alt="MÜLLERDÄCHER" fill sizes="224px" className="object-contain object-left" />
@@ -18,7 +18,7 @@ export default function Footer() {
               {" "}{BETRIEB.meister}. Deutschlandweit agierend, verwurzelt im Saarland.
             </p>
           </div>
-          <Link href="/kontakt" className="group flex items-end justify-end">
+          <Link href="/kontakt" className="group flex items-start justify-start md:items-end md:justify-end">
             <div className="paper-card-lift flex items-center gap-4 rounded-2xl px-5 py-4">
               <div className="text-right">
                 <div className="text-[10px] font-bold uppercase tracking-[0.22em] text-roof-500">Angebot</div>
@@ -107,7 +107,7 @@ export default function Footer() {
           <a
             href="https://www.muellerimmobilien.info"
             target="_blank" rel="noreferrer"
-            className="inline-flex items-center gap-2 self-start justify-self-start rounded-full bg-signal-400 px-5 py-3 text-sm font-bold text-ink-900 transition hover:bg-signal-300 sm:self-center sm:justify-self-end"
+            className="inline-flex w-full items-center justify-center gap-2 self-start justify-self-start rounded-full bg-signal-400 px-5 py-3 text-sm font-bold text-ink-900 transition hover:bg-signal-300 sm:w-auto sm:self-center sm:justify-self-end"
           >
             Zu MÜLLERIMMOBILIEN® <ExternalLink size={14} />
           </a>

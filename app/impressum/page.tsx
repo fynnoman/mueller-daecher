@@ -10,9 +10,9 @@ export default function ImpressumPage() {
     <>
       <PageHero eyebrow="Rechtliches" title={<>Impressum</>} />
       <section className="relative py-16">
-        <div className="mx-auto max-w-3xl px-6 sm:px-10">
+        <div className="mx-auto max-w-3xl px-5 sm:px-10">
           <Reveal>
-            <GlassCard className="p-8 sm:p-10">
+            <GlassCard className="p-6 sm:p-10">
               <div className="space-y-6 text-sm leading-relaxed text-ink-500">
                 <div>
                   <div className="text-[10px] font-bold uppercase tracking-[0.22em] text-roof-500">Betrieb</div>

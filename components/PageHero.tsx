@@ -16,7 +16,7 @@ export default function PageHero({
   const textY = useTransform(scrollYProgress, [0, 1], [0, -40]);
 
   return (
-    <section ref={ref} className="relative isolate flex min-h-[70vh] items-end overflow-hidden pt-40 sm:min-h-[80vh]">
+    <section ref={ref} className="relative isolate flex min-h-[60vh] items-end overflow-hidden pt-32 sm:min-h-[80vh] sm:pt-40">
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-20">
         <div className="absolute -left-40 top-24 h-[30rem] w-[30rem] rounded-full bg-signal-400/30 blur-2xl" />
         <div className="absolute right-0 top-0 h-[24rem] w-[24rem] rounded-full bg-roof-400/20 blur-2xl" />
@@ -30,12 +30,12 @@ export default function PageHero({
       )}
 
       <motion.div style={reduce ? undefined : { y: textY, willChange: "transform" }}
-        className="relative mx-auto w-full max-w-6xl px-6 pb-20 sm:px-10">
+        className="relative mx-auto w-full max-w-6xl px-5 pb-16 sm:px-10 sm:pb-20">
         <div className="chip-signal">{eyebrow}</div>
-        <h1 className="mt-6 display text-5xl leading-[1.02] tracking-tight text-ink-800 sm:text-6xl lg:text-7xl">
+        <h1 className="mt-6 display text-[2.5rem] leading-[1.02] tracking-tight text-ink-800 sm:text-6xl lg:text-7xl">
           {title}
         </h1>
-        {intro && <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-500">{intro}</p>}
+        {intro && <p className="mt-5 max-w-2xl text-base leading-relaxed text-ink-500 sm:mt-6 sm:text-lg">{intro}</p>}
       </motion.div>
     </section>
   );

@@ -9,9 +9,9 @@ export default function DatenschutzPage() {
     <>
       <PageHero eyebrow="Rechtliches" title={<>Datenschutz</>} />
       <section className="relative py-16">
-        <div className="mx-auto max-w-3xl px-6 sm:px-10">
+        <div className="mx-auto max-w-3xl px-5 sm:px-10">
           <Reveal>
-            <GlassCard className="p-8 sm:p-10">
+            <GlassCard className="p-6 sm:p-10">
               <div className="space-y-4 text-sm leading-relaxed text-ink-500">
                 <p>
                   Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Wir behandeln Ihre

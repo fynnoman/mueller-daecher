@@ -26,7 +26,7 @@ export default function TeamPage() {
 
       {/* Team-Foto */}
       <section className="relative py-16">
-        <div className="mx-auto max-w-6xl px-6 sm:px-10">
+        <div className="mx-auto max-w-6xl px-5 sm:px-10">
           <Reveal>
             <div className="relative aspect-[16/11] w-full overflow-hidden rounded-[2rem] bg-ink-900 shadow-lift">
               <Image src={IMG.team} alt="MÜLLERDÄCHER Team" fill sizes="(max-width: 1024px) 100vw, 1200px" className="object-cover" priority />
@@ -37,7 +37,7 @@ export default function TeamPage() {
 
       {/* MÜLLERZIRKEL Text */}
       <section className="relative py-16">
-        <div className="mx-auto max-w-4xl px-6 sm:px-10">
+        <div className="mx-auto max-w-4xl px-5 sm:px-10">
           <Reveal>
             <div className="chip-signal">MÜLLERGRUPPE® · MÜLLERZIRKEL®</div>
             <p className="mt-6 text-xl leading-relaxed text-ink-800">{GRUPPE_TEXT.zirkel}</p>
@@ -47,21 +47,21 @@ export default function TeamPage() {
 
       {/* CEO — Patrick */}
       <section className="relative py-16">
-        <div className="mx-auto max-w-6xl px-6 sm:px-10">
+        <div className="mx-auto max-w-6xl px-5 sm:px-10">
           <Reveal>
             <GlassCard variant="lift" className="grid gap-0 overflow-hidden p-0 lg:grid-cols-[1fr_1.2fr]">
               <div className="relative aspect-[4/5] w-full overflow-hidden bg-signal-400 lg:aspect-auto">
                 <Image src={IMG.patrick} alt="Patrick Raphael Müller" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain object-bottom" />
               </div>
-              <div className="p-8 sm:p-12">
+              <div className="p-6 sm:p-12">
                 <div className="chip-signal">Inhaber & Geschäftsführung</div>
-                <h2 className="mt-6 display text-4xl leading-tight text-ink-900 sm:text-5xl">
+                <h2 className="mt-6 display text-3xl leading-tight text-ink-900 sm:text-5xl">
                   Patrick Raphael Müller
                 </h2>
                 <div className="mt-2 text-sm font-semibold uppercase tracking-[0.22em] text-roof-500">
                   DDM · {BETRIEB.meisterExtra}
                 </div>
-                <blockquote className="mt-8 border-l-4 border-signal-400 pl-6 display text-2xl leading-tight text-ink-900">
+                <blockquote className="mt-8 border-l-4 border-signal-400 pl-5 display text-xl leading-tight text-ink-900 sm:pl-6 sm:text-2xl">
                   „Wir stehen für Wertarbeit und faire Preise.<br />
                   Darauf gebe ich Ihnen mein Wort."
                 </blockquote>

@@ -45,19 +45,19 @@ export default function ScrollScaleBackground({
 
           <motion.div
             style={reduce ? { opacity: 1 } : { opacity: contentOpacity, y: contentY }}
-            className="absolute inset-x-0 bottom-0 flex flex-col items-start px-8 pb-16 sm:px-16 sm:pb-24 lg:px-24"
+            className="absolute inset-x-0 bottom-0 flex flex-col items-start px-5 pb-12 sm:px-16 sm:pb-24 lg:px-24"
           >
             {eyebrow && (
-              <div className="mb-5 chip-signal">
+              <div className="mb-4 chip-signal sm:mb-5">
                 {eyebrow}
               </div>
             )}
             {title && (
-              <h2 className="display max-w-4xl text-4xl leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">
+              <h2 className="display max-w-4xl text-3xl leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">
                 {title}
               </h2>
             )}
-            {intro && <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">{intro}</p>}
+            {intro && <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/85 sm:mt-6 sm:text-lg">{intro}</p>}
             {children}
           </motion.div>
         </motion.div>

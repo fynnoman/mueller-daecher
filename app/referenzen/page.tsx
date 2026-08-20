@@ -22,11 +22,11 @@ export default function ReferenzenPage() {
       />
 
       <section className="relative py-16">
-        <div className="mx-auto max-w-7xl px-6 sm:px-10">
+        <div className="mx-auto max-w-7xl px-5 sm:px-10">
           <div className="grid gap-6 md:grid-cols-2">
             {REFERENZEN.map((r, i) => (
               <Reveal key={`${r.jahr}-${r.titel}`} delay={(i % 4) * 0.05}>
-                <GlassCard variant="lift" className="p-7 sm:p-8">
+                <GlassCard variant="lift" className="p-6 sm:p-8">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
                     <div className="stencil text-3xl text-ink-900">{r.jahr}</div>
                     <div className="chip-signal">{r.kategorie}</div>

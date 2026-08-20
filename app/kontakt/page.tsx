@@ -23,22 +23,22 @@ export default function KontaktPage() {
 
       {/* Notfall-Highlight */}
       <section className="relative -mt-8 pb-8">
-        <div className="mx-auto max-w-6xl px-6 sm:px-10">
+        <div className="mx-auto max-w-6xl px-5 sm:px-10">
           <Reveal>
-            <div className="relative overflow-hidden rounded-3xl bg-alarm-500 p-6 text-white shadow-2xl sm:p-8">
-              <div className="flex flex-wrap items-center justify-between gap-6">
+            <div className="relative overflow-hidden rounded-3xl bg-alarm-500 p-5 text-white shadow-2xl sm:p-8">
+              <div className="flex flex-col gap-5 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:gap-6">
                 <div className="flex items-center gap-4">
                   <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white/20">
                     <Siren size={22} />
                   </div>
                   <div>
                     <div className="text-[10px] font-bold uppercase tracking-[0.22em] text-white/80">Sturmschaden & Notreparatur</div>
-                    <div className="display text-2xl leading-tight sm:text-3xl">Notfallhilfe. Sofortmaßnahmen.</div>
+                    <div className="display text-xl leading-tight sm:text-3xl">Notfallhilfe. Sofortmaßnahmen.</div>
                   </div>
                 </div>
                 <a
                   href={`tel:${BETRIEB.mobileRaw}`}
-                  className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-bold text-alarm-600 shadow-lg transition hover:bg-signal-400 hover:text-ink-900"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-bold text-alarm-600 shadow-lg transition hover:bg-signal-400 hover:text-ink-900 sm:w-auto"
                 >
                   <Phone size={16} /> {BETRIEB.mobile}
                 </a>
@@ -50,7 +50,7 @@ export default function KontaktPage() {
 
       {/* Anfrage-Form + Kontakt-Daten */}
       <section className="relative py-16">
-        <div className="mx-auto max-w-6xl px-6 sm:px-10">
+        <div className="mx-auto max-w-6xl px-5 sm:px-10">
           <div className="grid gap-8 lg:grid-cols-[1fr_1.1fr]">
             <Reveal>
               <div className="grid gap-3">
@@ -112,7 +112,7 @@ export default function KontaktPage() {
             </Reveal>
 
             <Reveal delay={0.1}>
-              <GlassCard variant="lift" className="relative overflow-hidden p-8 sm:p-10">
+              <GlassCard variant="lift" className="relative overflow-hidden p-6 sm:p-10">
                 <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-signal-400/30 blur-2xl" />
                 <div className="chip-signal">Anfrage</div>
                 <h2 className="mt-6 display text-3xl leading-tight text-ink-900 sm:text-4xl">
