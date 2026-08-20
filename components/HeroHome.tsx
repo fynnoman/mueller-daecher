@@ -21,7 +21,7 @@ export default function HeroHome() {
   return (
     <section
       ref={ref}
-      className="relative isolate min-h-[100svh] overflow-hidden pt-32 pb-16 sm:pt-40"
+      className="relative isolate min-h-[100svh] overflow-hidden pt-28 pb-12 sm:pt-40 sm:pb-16"
     >
       {/* Rooftop background */}
       <motion.div
@@ -55,7 +55,7 @@ export default function HeroHome() {
         }}
       />
 
-      <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 items-end gap-12 px-6 pt-8 sm:px-10 lg:grid-cols-[1.35fr_1fr] lg:gap-12">
+      <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 items-end gap-10 px-5 pt-8 sm:gap-12 sm:px-10 lg:grid-cols-[1.35fr_1fr] lg:gap-12">
         <motion.div style={reduce ? undefined : { y: textY, willChange: "transform" }}>
           {/* Wordmark chip using logo */}
           <div className="inline-flex h-9 w-44 items-center overflow-hidden rounded-lg bg-signal-400 shadow-lg ring-1 ring-inset ring-black/20 sm:h-10 sm:w-48">
@@ -64,7 +64,7 @@ export default function HeroHome() {
             </div>
           </div>
 
-          <h1 className="mt-6 display text-[3rem] text-white sm:text-[4.5rem] lg:text-[5.75rem]">
+          <h1 className="mt-6 display text-[2.5rem] leading-[0.95] text-white sm:text-[4.5rem] sm:leading-[0.95] lg:text-[5.75rem]">
             Alles für Dach
             <br />
             und Fassade
@@ -74,28 +74,28 @@ export default function HeroHome() {
             </span>
           </h1>
 
-          <p className="mt-8 max-w-xl text-xl leading-tight text-white sm:text-2xl">
+          <p className="mt-6 max-w-xl text-lg leading-tight text-white sm:mt-8 sm:text-2xl">
             <span className="highlight-yellow font-bold text-ink-900">Zum Festpreis.</span>{" "}
             <span className="highlight-yellow font-bold text-ink-900">Garantiert.</span>
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-3">
+          <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center">
             <Link
               href="/kontakt"
-              className="group inline-flex items-center gap-2 rounded-full bg-signal-400 px-6 py-3.5 text-sm font-bold text-ink-900 shadow-lift transition hover:bg-signal-300"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-signal-400 px-6 py-3.5 text-sm font-bold text-ink-900 shadow-lift transition hover:bg-signal-300 sm:justify-start"
             >
               Unverbindliches Angebot
               <ArrowUpRight size={16} className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </Link>
             <a
               href={`tel:${BETRIEB.phoneRaw}`}
-              className="inline-flex items-center gap-2 rounded-full border-2 border-white/40 bg-black/30 px-6 py-3 text-sm font-bold text-white backdrop-blur transition hover:bg-black/50"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/40 bg-black/30 px-6 py-3 text-sm font-bold text-white backdrop-blur transition hover:bg-black/50 sm:justify-start"
             >
               <Phone size={15} /> {BETRIEB.phone}
             </a>
           </div>
 
-          <div className="mt-14 flex flex-wrap items-center gap-4 text-sm text-white/85">
+          <div className="mt-10 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-white/85 sm:mt-14 sm:gap-4 sm:text-sm">
             <span className="inline-flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-signal-400" />
               Dritte Generation · deutschlandweit
